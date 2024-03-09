@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  h1= title
+  h2= 'HERE IS A RANDOM CAT'
+  each url, id in data
+      img.image(src=url alt='omg' width='200' height='200')
+      br
+      button(class='add-cat-button' data=id) Add Cat To Your Collection
+  br
+  br
+  br
+
+  h2= "Here is your cat collection"
+    br
+    br
+    each data, id in ourcats
+      - url = data.url, name = data.name
+        img.image(src=url alt='omg' width='200' height='200')
+        br
+        span #{name} &nbsp;
+        button(class='rename-cat-button' data=id name=name) Rename
+        br
+        button(class='remove-cat-button' data=id) Remove Cat From Your Collection
+        br
+        br
+        br
