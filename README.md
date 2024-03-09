@@ -1,2 +1,2 @@
 ## Notes
-I used express-generator to generate a base template that is kept in the express-app folder.  Within this folder, all of my logic is in cats.js in the routes folder, and the template is cats.jade in the views folder that is the entire UI.
+I used express-generator to generate a base template that is kept in the express-app folder.  Within this folder, all of my logic is in cats.js in the routes folder, and the template is cats.jade in the views folder that is the entire UI. The script public/javascripts/script.js handles all events and calls the back end.
